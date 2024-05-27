@@ -1,20 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Header() {
 	return (
 		<header className="pt-6 md:pt-8 px-6 md:px-8 pb-0 flex justify-between items-start relative flex-col text-center">
 			<div className="flex flex-shrink-0 items-center justify-end gap-2 w-full">
-				<a href="https://github.com/lucaspausin" target="_blank">
+				<a href="https://github.com/lucaspausin/impuesbox" target="_blank">
 					<img
 						src="/images/git.avif"
-						alt="my-git-hub"
+						alt="repositorio-de-github-para-proyecto-desplegado"
 						className="h-[2.35rem] w-[2.35rem]"
 					/>
 				</a>
 				<a href="https://www.linkedin.com/in/pausinlucas/" target="_blank">
 					<img
 						src="/images/linkedin.avif"
-						alt="my-linkedin"
+						alt="mi-perfil-de-linkedin"
 						className="h-[2.35rem] w-[2.35rem] invert"
 					/>
 				</a>
