@@ -8,6 +8,8 @@ import Filter from "./components/filter";
 import OrderBy from "./components/orderBy";
 import Platform from "./components/platform";
 
+import "@fontsource-variable/manrope";
+
 function App() {
 	const [search, setSearch] = useState("");
 	const [filter, setFilter] = useState("deals");

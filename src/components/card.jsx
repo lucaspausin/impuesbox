@@ -12,10 +12,10 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 					}
 					loading="lazy"
 					alt="Imagen de juego de Xbox"
-					className="h-36 w-36 object-cover rounded-full contrast-125 drop-shadow-2xl shadow-inner border border-gray-200"
+					className="h-36 w-36 object-cover rounded-full contrast-125 drop-shadow-2xl shadow-inner border-2 border-gray-200"
 				/>
 				<div className="flex flex-col items-start justify-center gap-2 w-full pt-3">
-					<p className="text-[0.95rem] px-[0.25rem] right-3 top-3 md:absolute bg-yellow-300 rounded-sm text-yellow-950 opacity-95 font-semibold">
+					<p className="text-[0.95rem] px-[0.25rem] right-3 top-3 md:absolute bg-yellow-300 rounded-sm text-yellow-950 font-semibold">
 						{discount}
 					</p>
 					<a
