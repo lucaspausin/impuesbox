@@ -130,7 +130,7 @@ function App() {
 					platform={platform}
 					handlePlatformChange={handlePlatformChange}
 				/>
-				<section className="w-full px-4 md:px-8 leading-6 flex items-start justify-between md:items-start flex-col lg:flex-col gap-6 lg:gap-4">
+				<section className="w-full px-6 md:px-8 leading-6 flex items-start justify-between md:items-start flex-col lg:flex-col gap-6 lg:gap-4">
 					<Form setSearch={setSearch} />
 					<article className="flex flex-col lg:flex-row lg:w-full justify-between w-full gap-1 text-[1rem]">
 						<Filter filter={filter} handleFilterChange={handleFilterChange} />
@@ -150,7 +150,7 @@ function App() {
 				{isLoading ? (
 					<div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem] bg-gray-50">
 						<img
-							src="/images/xboxicon.webp"
+							src="/images/xboxicon.avif"
 							alt="xbox-icon"
 							className="h-[2.5rem] w-[2.5rem] loading-icon"
 						/>
