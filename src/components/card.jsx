@@ -10,6 +10,7 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 							? imgsrc
 							: "https://i.pinimg.com/564x/68/0e/10/680e10ff9c6d1ff01ba023f6678acd3f.jpg"
 					}
+					loading="lazy"
 					alt="Imagen de juego de Xbox"
 					className="h-36 w-36 object-cover rounded-full contrast-125 drop-shadow-2xl shadow-inner border border-gray-200 dark:border-gray-900"
 				/>

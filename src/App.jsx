@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./App.css";
 import Header from "./components/header";
 import Form from "./components/form";
@@ -48,15 +49,16 @@ function App() {
 	const readGoogleSheet = () => {
 		setIsLoading(true);
 
-		fetch(
-			`https://gsx2json.com/api?id=${
-				import.meta.env.VITE_SCRAPPED_XBOXGAMES_API_ID
-			}&columns=false&sheet=master&api_key=${
-				import.meta.env.VITE_GOOGLE_API_KEY
-			}`
-		)
-			.then((response) => response.json())
-			.then((data) => {
+		axios
+			.get(
+				`https://gsx2json.com/api?id=${
+					import.meta.env.VITE_SCRAPPED_XBOXGAMES_API_ID
+				}&columns=false&sheet=master&api_key=${
+					import.meta.env.VITE_GOOGLE_API_KEY
+				}`
+			)
+			.then((response) => {
+				const data = response.data;
 				if (data && data.rows) {
 					const rowsWithFormattedData = data.rows.map((row) => {
 						const title = row.title.toString();
@@ -144,7 +146,7 @@ function App() {
 			{isLoading ? (
 				<div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50 dark:invert mx-auto ">
 					<img
-						src="/images/xboxicon.png"
+						src="/images/xboxicon.webp"
 						alt=""
 						className="h-[2.5rem] w-[2.5rem] loading-icon"
 					/>
