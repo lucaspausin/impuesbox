@@ -5,11 +5,11 @@ function Header({ darkMode, toggleDarkMode }) {
 	return (
 		<header className="pt-10 px-4 md:px-8 pb-0 flex justify-between items-start relative flex-col md:flex-row ">
 			<div className="flex flex-col gap-2 items-start">
-				<h1 className="font-semibold text-6xl uppercase text-black dark:text-white m:w-full">
+				<h1 className="font-semibold text-6xl uppercase">
 					IMPUESBOX
 					<br />
 					DESDE LA{" "}
-					<span className="bg-clip-text font-semibold text-transparent bg-gradient-to-bl from-[#0f770f] to-gray-950">
+					<span className="bg-clip-text text-transparent bg-gradient-to-bl from-[#0f770f] to-gray-950">
 						XBOX STORE
 					</span>
 				</h1>

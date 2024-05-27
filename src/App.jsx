@@ -143,6 +143,7 @@ function App() {
 
 	return (
 		<>
+			<div className="absolute inset-0 -z-40 h-full w-full bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#0f0f0f_1px,transparent_1px),linear-gradient(to_bottom,#0f0f0f_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>
 			{isLoading ? (
 				<div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50 dark:invert mx-auto ">
 					<img

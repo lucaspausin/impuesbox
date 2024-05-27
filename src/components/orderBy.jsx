@@ -3,10 +3,7 @@ import React from "react";
 const orderBy = ({ orderBy, handleOrderByChange, filter }) => {
 	return (
 		<fieldset className="flex gap-1 lg:justify-normal items-center justify-between whitespace-nowrap">
-			<span
-				role="legend"
-				className="font-semibold dark:text-white text-black truncate"
-			>
+			<span className="font-semibold dark:text-white text-black truncate">
 				Ordenar por :
 			</span>
 			<div className="flex items-center gap-[0.3rem]">
