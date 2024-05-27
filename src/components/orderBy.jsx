@@ -3,7 +3,7 @@ import React from "react";
 const orderBy = ({ orderBy, handleOrderByChange, filter }) => {
 	return (
 		<fieldset className="flex gap-1 lg:justify-normal items-center justify-between whitespace-nowrap">
-			<span className="font-semibold dark:text-white text-black truncate">
+			<span className="font-semibold  text-black truncate">
 				Ordenar por :
 			</span>
 			<div className="flex items-center gap-[0.3rem]">
@@ -13,7 +13,7 @@ const orderBy = ({ orderBy, handleOrderByChange, filter }) => {
 						filter === "free"
 							? "text-[#888888] cursor-not-allowed"
 							: orderBy === "priceAsc"
-							? "dark:focus:text-white dark:text-white text-black "
+							? " text-black "
 							: ""
 					}`}
 					onClick={() => handleOrderByChange("priceAsc")}
@@ -28,7 +28,7 @@ const orderBy = ({ orderBy, handleOrderByChange, filter }) => {
 						filter === "free"
 							? "text-[#888888] cursor-not-allowed"
 							: orderBy === "priceDesc"
-							? "dark:focus:text-white dark:text-white text-black "
+							? " text-black "
 							: ""
 					}`}
 					onClick={() => handleOrderByChange("priceDesc")}

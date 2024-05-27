@@ -16,28 +16,6 @@ function App() {
 	const [isLoading, setIsLoading] = useState(true);
 	const [platform, setPlatform] = useState("PC");
 
-	const [darkMode, setDarkMode] = useState(() => {
-		if (
-			window.matchMedia &&
-			window.matchMedia("(prefers-color-scheme: dark)").matches
-		) {
-			return false;
-		}
-		return false;
-	});
-
-	useEffect(() => {
-		if (darkMode) {
-			document.querySelector("html").classList.add("dark");
-		} else {
-			document.querySelector("html").classList.remove("dark");
-		}
-	}, [darkMode]);
-
-	const toggleDarkMode = () => {
-		setDarkMode((prevMode) => !prevMode);
-	};
-
 	const handlePlatformChange = (event) => {
 		setPlatform(event.target.value);
 	};
@@ -143,47 +121,46 @@ function App() {
 
 	return (
 		<>
-			<div className="absolute inset-0 -z-40 h-full w-full bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#0f0f0f_1px,transparent_1px),linear-gradient(to_bottom,#0f0f0f_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>
-			{isLoading ? (
-				<div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50 dark:invert mx-auto ">
-					<img
-						src="/images/xboxicon.webp"
-						alt=""
-						className="h-[2.5rem] w-[2.5rem] loading-icon"
-					/>
-				</div>
-			) : (
-				<>
-					<Header
-						platform={platform}
-						handlePlatformChange={handlePlatformChange}
-						darkMode={darkMode}
-						toggleDarkMode={toggleDarkMode}
-					/>
-					<section className="w-full px-4 md:px-8 leading-6 flex items-start justify-between md:items-start flex-col lg:flex-col gap-6 lg:gap-4">
-						<Form setSearch={setSearch} />
-						<article className="flex flex-col lg:flex-row lg:w-full justify-between w-full gap-1 text-[1rem]">
-							<Filter filter={filter} handleFilterChange={handleFilterChange} />
-							<div className="flex flex-col lg:flex-row gap-1 lg:gap-4">
-								<Platform
-									platform={platform}
-									handlePlatformChange={handlePlatformChange}
-								/>
-								<OrderBy
-									orderBy={orderBy}
-									handleOrderByChange={handleOrderByChange}
-									filter={filter}
-								/>
-							</div>
-						</article>
-					</section>
+			<div className="absolute inset-0 -z-40 h-full w-full bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)]  bg-[size:6rem_4rem]"></div>
+
+			<>
+				<Header
+					platform={platform}
+					handlePlatformChange={handlePlatformChange}
+				/>
+				<section className="w-full px-4 md:px-8 leading-6 flex items-start justify-between md:items-start flex-col lg:flex-col gap-6 lg:gap-4">
+					<Form setSearch={setSearch} />
+					<article className="flex flex-col lg:flex-row lg:w-full justify-between w-full gap-1 text-[1rem]">
+						<Filter filter={filter} handleFilterChange={handleFilterChange} />
+						<div className="flex flex-col lg:flex-row gap-1 lg:gap-4">
+							<Platform
+								platform={platform}
+								handlePlatformChange={handlePlatformChange}
+							/>
+							<OrderBy
+								orderBy={orderBy}
+								handleOrderByChange={handleOrderByChange}
+								filter={filter}
+							/>
+						</div>
+					</article>
+				</section>
+				{isLoading ? (
+					<div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem] bg-gray-50">
+						<img
+							src="/images/xboxicon.webp"
+							alt="xbox-icon"
+							className="h-[2.5rem] w-[2.5rem] loading-icon"
+						/>
+					</div>
+				) : (
 					<Games
 						datos={filteredAndSortedGames}
 						search={search}
 						platform={platform}
 					/>
-				</>
-			)}
+				)}
+			</>
 		</>
 	);
 }

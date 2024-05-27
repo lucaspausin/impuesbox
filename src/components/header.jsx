@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Darkbutton from "./darkbutton";
 
-function Header({ darkMode, toggleDarkMode }) {
+
+function Header() {
 	return (
 		<header className="pt-10 px-4 md:px-8 pb-0 flex justify-between items-start relative flex-col md:flex-row ">
 			<div className="flex flex-col gap-2 items-start">
@@ -25,17 +25,17 @@ function Header({ darkMode, toggleDarkMode }) {
 					<img
 						src="/images/git.png"
 						alt=""
-						className="h-[2rem] w-[2rem] dark:invert hover:opacity-80 transition-all ease-in-out "
+						className="h-[2rem] w-[2rem] hover:opacity-80 transition-all ease-in-out "
 					/>
 				</a>
 				<a href="https://www.linkedin.com/in/pausinlucas/" target="_blank">
 					<img
 						src="/images/linke.png"
 						alt=""
-						className="h-[2rem] w-[2rem] dark:invert hover:opacity-80 transition-all ease-in-out"
+						className="h-[2rem] w-[2rem] hover:opacity-80 transition-all ease-in-out"
 					/>
 				</a>
-				<Darkbutton darkMode={darkMode} toggleDarkMode={toggleDarkMode} /> */}
+				 */}
 			</div>
 		</header>
 	);

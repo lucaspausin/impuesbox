@@ -2,7 +2,7 @@ import React from "react";
 
 function Card({ title, price, imgsrc, originalprice, discount, href }) {
 	return (
-		<article className="flex flex-col justify-between items-start gap-2 bg-gray-50 dark:bg-[#262626] shadow-lg h-[25rem] relative p-3 border border-gray-200 dark:border-zinc-900 ">
+		<article className="flex flex-col justify-between items-start gap-2 bg-gray-50 shadow-lg h-[25rem] relative p-3 border border-gray-200">
 			<div className="flex flex-col w-full gap-2 ">
 				<img
 					src={
@@ -12,7 +12,7 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 					}
 					loading="lazy"
 					alt="Imagen de juego de Xbox"
-					className="h-36 w-36 object-cover rounded-full contrast-125 drop-shadow-2xl shadow-inner border border-gray-200 dark:border-gray-900"
+					className="h-36 w-36 object-cover rounded-full contrast-125 drop-shadow-2xl shadow-inner border border-gray-200"
 				/>
 				<div className="flex flex-col items-start justify-center gap-2 w-full pt-3">
 					<p className="text-[0.95rem] px-[0.25rem] right-3 top-3 md:absolute bg-yellow-300 rounded-sm text-yellow-950 opacity-95 font-semibold">
@@ -20,7 +20,7 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 					</p>
 					<a
 						href={href}
-						className="text-2xl text-zinc-700 font-bold text-start dark:text-white line-clamp-2 "
+						className="text-2xl text-zinc-700 font-bold text-start line-clamp-2 "
 						target="_blank"
 					>
 						{title}
@@ -47,7 +47,7 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 					</div>
 				</div>
 			</div>
-			<p className="text-[0.75rem] font-medium text-zinc-700 dark:text-[#c9c8c8]">
+			<p className="text-[0.75rem] font-medium text-zinc-700">
 				*Impuestos incluidos
 			</p>
 		</article>

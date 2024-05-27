@@ -56,7 +56,7 @@ const GameDisplay = ({ datos, search, platform }) => {
 		<main>
 			<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 flex-1 px-4 md:px-8  md:pb-8 gap-8 justify-between relative">
 				{filteredGames.length === 0 ? (
-					<p className="col-span-full text-lg font-Oswald text-black dark:text-white   py-3">
+					<p className="col-span-full text-lg font-Oswald text-black py-3">
 						¡Hmm, parece que no tenemos este juego en la colección por el
 						momento! No te preocupes, ¡puede que aparezca más adelante!
 					</p>
@@ -110,7 +110,7 @@ const GameDisplay = ({ datos, search, platform }) => {
 							<img
 								src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_up_48px-512.png"
 								alt=""
-								className="bg-transparent h-16 w-15 dark:invert"
+								className="bg-transparent h-16 w-15"
 							/>
 						</button>
 					</motion.div>
