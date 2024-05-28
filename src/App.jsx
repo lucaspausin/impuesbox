@@ -151,7 +151,7 @@ function App() {
 						<img
 							src="/images/xboxicon.avif"
 							alt="xbox-icon"
-							className="h-7 w-7 md:h-[2.5rem] md:w-[2.5rem] loading-icon"
+							className="h-7 w-7 md:h-8 md:w-8 lg:h-9 lg:w-9 loading-icon"
 						/>
 					</div>
 				) : (
