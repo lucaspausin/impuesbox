@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
 	return (
-		<header className="pt-6 md:pt-8 px-6 md:px-8 pb-0 flex justify-between items-start relative flex-col text-center">
+		<header className="pt-6 md:pt-8 px-8 md:px-10 lg:px-12 pb-0 flex justify-between items-start relative flex-col text-center">
 			<div className="flex flex-shrink-0 items-center justify-end gap-2 w-full">
 				<a href="https://github.com/lucaspausin/impuesbox" target="_blank">
 					<img
@@ -20,7 +20,7 @@ function Header() {
 				</a>
 			</div>
 			<div className="flex flex-col gap-4 items-center justify-center w-full pt-12">
-				<h1 className="font-semibold text-4xl md:text-7xl ">
+				<h1 className="font-semibold text-4xl md:text-6xl lg:text-7xl ">
 					Impuesbox,
 					<br />
 					Desde la{" "}

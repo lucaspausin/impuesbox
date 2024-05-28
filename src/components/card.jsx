@@ -5,14 +5,10 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 		<article className="flex flex-col justify-between items-start gap-2 bg-gray-50 shadow-lg h-[25rem] relative p-3 border border-gray-200">
 			<div className="flex flex-col w-full gap-2 ">
 				<img
-					src={
-						imgsrc
-							? imgsrc
-							: "https://i.pinimg.com/564x/68/0e/10/680e10ff9c6d1ff01ba023f6678acd3f.jpg"
-					}
+					src={imgsrc || "/images/xbox-game-default.avif"}
 					loading="lazy"
 					alt="imagen-de-juego-de-xbox"
-					className="h-32 w-32 object-cover rounded-full contrast-125 drop-shadow-2xl shadow-inner border border-gray-300"
+					className="h-24 w-24 md:h-32 md:w-32 object-cover rounded-full contrast-125 drop-shadow-2xl shadow-inner border border-gray-300"
 				/>
 				<div className="flex flex-col items-start justify-center gap-2 w-full pt-3">
 					<p className=" text-[0.95rem] px-[0.25rem] right-3 top-3 md:absolute bg-yellow-300 rounded-sm text-yellow-950 font-semibold">
@@ -20,7 +16,7 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 					</p>
 					<a
 						href={href}
-						className="text-2xl text-zinc-700 font-bold line-clamp-2"
+						className="text-xl md:text-2xl text-zinc-700 font-bold line-clamp-2"
 						target="_blank"
 					>
 						{title}
@@ -39,7 +35,7 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 										</p>
 									</div>
 								) : null}
-								<p className="text-[1.30rem] text-[#126215] font-semibold truncate">
+								<p className="text-xl md:text-[1.30rem] text-[#126215] font-semibold truncate">
 									${price}
 								</p>
 							</div>

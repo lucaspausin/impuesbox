@@ -129,7 +129,7 @@ function App() {
 					platform={platform}
 					handlePlatformChange={handlePlatformChange}
 				/>
-				<section className="w-full px-6 md:px-8 leading-6 flex items-start justify-between md:items-start flex-col lg:flex-col gap-6 lg:gap-4">
+				<section className="w-full px-8 md:px-10 lg:px-12 leading-6 flex items-start justify-between md:items-start flex-col lg:flex-col gap-6 lg:gap-4">
 					<Form setSearch={setSearch} />
 					<article className="flex flex-col lg:flex-row lg:w-full justify-between w-full gap-1 text-[1rem]">
 						<Filter filter={filter} handleFilterChange={handleFilterChange} />
@@ -151,7 +151,7 @@ function App() {
 						<img
 							src="/images/xboxicon.avif"
 							alt="xbox-icon"
-							className="h-[2.5rem] w-[2.5rem] loading-icon"
+							className="h-7 w-7 md:h-[2.5rem] md:w-[2.5rem] loading-icon"
 						/>
 					</div>
 				) : (
