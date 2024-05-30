@@ -20,7 +20,7 @@ function Header() {
 				</a>
 			</div>
 			<div className="flex flex-col gap-4 items-center justify-center w-full pt-12">
-				<h1 className="font-semibold text-4xl md:text-6xl lg:text-7xl ">
+				<h1 className="font-semibold text-4xl md:text-6xl lg:text-7xl">
 					Impuesbox,
 					<br />
 					Desde la{" "}
