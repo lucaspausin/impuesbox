@@ -12,8 +12,8 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 				/>
 				<div className="flex flex-col items-start justify-center gap-2 w-full pt-3">
 					{discount && (
-						<p className="text-[1rem] px-[0.3rem] right-5 top-5 md:absolute border border-yellow-400  rounded-sm text-yellow-600 font-medium">
-							<span className="bg-clip-text text-transparent bg-gradient-to-tl from-yellow-300 to-yellow-800">
+						<p className="text-[1rem] px-[0.3rem] right-5 top-5 md:absolute border border-yellow-500 text-yellow-500 rounded-sm font-medium">
+							<span className="bg-clip-text text-transparent bg-gradient-to-tl from-yellow-500 to-yellow-700">
 								{discount}
 							</span>
 						</p>

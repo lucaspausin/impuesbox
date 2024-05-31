@@ -8,14 +8,14 @@ function Header() {
 					<img
 						src="/images/git.avif"
 						alt="repositorio-de-github-para-proyecto-desplegado"
-						className="h-[2.35rem] w-[2.35rem]"
+						className="h-[2.3rem] w-[2.3rem]"
 					/>
 				</a>
 				<a href="https://www.linkedin.com/in/pausinlucas/" target="_blank">
 					<img
 						src="/images/linkedin.avif"
 						alt="mi-perfil-de-linkedin"
-						className="h-[2.35rem] w-[2.35rem] invert"
+						className="h-[2.3rem] w-[2.3rem] invert"
 					/>
 				</a>
 			</div>
