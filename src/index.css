@@ -1,10 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-* {
-	@apply transition-colors ease-out duration-500;
-}
 
 .loading-icon {
 	animation: myAnim 2s infinite;

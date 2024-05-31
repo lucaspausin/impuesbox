@@ -22,20 +22,16 @@ function App() {
 		setPlatform(event.target.value);
 	};
 
-	useEffect(() => {
-		readGoogleSheet();
-	}, []);
+	const { VITE_SCRAPPED_XBOXGAMES_API_ID, VITE_GOOGLE_API_KEY } = import.meta
+		.env;
 
 	const readGoogleSheet = () => {
 		setIsLoading(true);
 
+		axios;
 		axios
 			.get(
-				`https://gsx2json.com/api?id=${
-					import.meta.env.VITE_SCRAPPED_XBOXGAMES_API_ID
-				}&columns=false&sheet=master&api_key=${
-					import.meta.env.VITE_GOOGLE_API_KEY
-				}`
+				`https://gsx2json.com/api?id=${VITE_SCRAPPED_XBOXGAMES_API_ID}&columns=false&sheet=master&api_key=${VITE_GOOGLE_API_KEY}`
 			)
 			.then((response) => {
 				const data = response.data;
@@ -67,6 +63,10 @@ function App() {
 				setIsLoading(false);
 			});
 	};
+
+	useEffect(() => {
+		readGoogleSheet();
+	}, []);
 
 	const handleOrderByChange = (newOrder) => {
 		if (newOrder !== orderBy && filter !== "free") {
@@ -125,10 +125,7 @@ function App() {
 		<>
 			<div className="absolute inset-0 -z-40 h-full w-full bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)]  bg-[size:6rem_4rem]"></div>
 			<>
-				<Header
-					platform={platform}
-					handlePlatformChange={handlePlatformChange}
-				/>
+				<Header />
 				<section className="w-full px-8 md:px-10 lg:px-12 leading-6 flex items-start justify-between md:items-start flex-col lg:flex-col gap-6 lg:gap-4">
 					<Form setSearch={setSearch} />
 					<article className="flex flex-col lg:flex-row lg:w-full justify-between w-full gap-1 text-[1rem]">

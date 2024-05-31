@@ -5,10 +5,10 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 		<article className="flex flex-col justify-between items-start gap-2 bg-gray-50 shadow-lg h-[25rem] relative p-6 border border-gray-200">
 			<div className="flex flex-col w-full gap-2 ">
 				<img
+					loading="eager"
 					src={imgsrc || "/images/xbox-game-default.avif"}
-					loading="lazy"
 					alt="imagen-de-juego-de-xbox"
-					className="h-24 w-24 md:h-32 md:w-32 object-cover rounded-full contrast-150 drop-shadow-2xl border border-gray-300"
+					className="h-28 w-28 rounded-full contrast-150 drop-shadow-2xl"
 				/>
 				<div className="flex flex-col items-start justify-center gap-2 w-full pt-3">
 					{discount && (
@@ -47,9 +47,7 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 					</div>
 				</div>
 			</div>
-			<p className="text-sm text-[#6d6d6d]">
-				*Incluye el +60% de impuestos.
-			</p>
+			<p className="text-sm text-[#6d6d6d]">*Incluye el +60% de impuestos.</p>
 		</article>
 	);
 }
