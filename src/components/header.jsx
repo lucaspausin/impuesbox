@@ -1,26 +1,19 @@
 import React from "react";
+import { Github, Linkedin } from "lucide-react";
 
 function Header() {
 	return (
-		<header className="pt-6 md:pt-8 px-8 md:px-10 lg:px-12 pb-0 flex justify-between items-start relative flex-col text-center">
-			<div className="flex flex-shrink-0 items-center justify-end gap-2 w-full">
+		<header className="pt-6 md:pt-8 px-8 md:px-10 lg:px-12 pb-0 flex justify-between relative flex-col">
+			<div className="flex flex-shrink-0 items-center justify-end gap-4 w-full">
 				<a href="https://github.com/lucaspausin/impuesbox" target="_blank">
-					<img
-						src="/images/git.avif"
-						alt="repositorio-de-github-para-proyecto-desplegado"
-						className="h-[2.3rem] w-[2.3rem]"
-					/>
+					<Github strokeWidth={1.25} className="w-6 h-6" />
 				</a>
 				<a href="https://www.linkedin.com/in/pausinlucas/" target="_blank">
-					<img
-						src="/images/linkedin.avif"
-						alt="mi-perfil-de-linkedin"
-						className="h-[2.3rem] w-[2.3rem] invert"
-					/>
+					<Linkedin strokeWidth={1.25} className="w-6 h-6" />
 				</a>
 			</div>
-			<div className="flex flex-col gap-4 items-center justify-center w-full pt-12">
-				<h1 className="font-semibold text-4xl md:text-6xl lg:text-7xl">
+			<div className="flex flex-col gap-4 items-center justify-center w-full pt-12 text-center">
+				<h1 className="text-4xl md:text-5xl lg:text-6xl">
 					Impuesbox,
 					<br />
 					Desde la{" "}

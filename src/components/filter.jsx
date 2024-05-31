@@ -3,7 +3,7 @@ import React from "react";
 const filter = ({ filter, handleFilterChange }) => {
 	return (
 		<fieldset className="flex items-center gap-1 lg:justify-normal justify-between whitespace-nowrap">
-			<span className="font-semibold text-black">
+			<span className=" text-black font-medium">
 				Filtrar por :
 			</span>
 			<div className="flex items-center gap-[0.3rem]">

@@ -12,34 +12,34 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 				/>
 				<div className="flex flex-col items-start justify-center gap-2 w-full pt-3">
 					{discount && (
-						<p className="text-[1rem] px-[0.3rem] right-5 top-5 md:absolute border border-yellow-500 text-yellow-500 rounded-sm font-medium">
-							<span className="bg-clip-text text-transparent bg-gradient-to-tl from-yellow-500 to-yellow-700">
+						<p className="text-[1rem] px-[0.3rem] right-5 top-5 absolute border border-yellow-500 text-yellow-500 rounded-sm ">
+							<span className="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-500 to-yellow-700">
 								{discount}
 							</span>
 						</p>
 					)}
 					<a
 						href={href}
-						className="text-xl md:text-2xl text-zinc-700 font-bold line-clamp-2"
+						className="text-xl md:text-2xl text-black  line-clamp-2 font-medium"
 						target="_blank"
 					>
 						{title}
 					</a>
 					<div className="flex flex-col gap-1 w-full">
 						{parseFloat(price) === 0 ? (
-							<p className="text-lg md:text-xl text-[#126215] font-semibold truncate">
+							<p className="text-lg md:text-xl text-[#126215]  truncate">
 								GRATIS
 							</p>
 						) : (
 							<div className="drop-shadow-2xl">
 								{parseFloat(originalprice) > 0 ? (
 									<div className="flex justify-between items-center">
-										<p className="text-base md:text-lg font-medium line-through text-[#6d6d6d]">
+										<p className="text-base md:text-lg line-through text-[#6d6d6d]">
 											${originalprice}
 										</p>
 									</div>
 								) : null}
-								<p className="text-lg md:text-xl text-[#126215] font-semibold truncate">
+								<p className="text-lg md:text-xl text-[#126215]  truncate">
 									${price}
 								</p>
 							</div>
@@ -47,7 +47,7 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 					</div>
 				</div>
 			</div>
-			<p className="text-sm font-medium text-[#6d6d6d]">
+			<p className="text-sm text-[#6d6d6d]">
 				*Incluye el +60% de impuestos.
 			</p>
 		</article>

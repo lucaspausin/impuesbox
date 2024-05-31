@@ -3,7 +3,7 @@ import React from "react";
 const Platform = ({ platform, handlePlatformChange }) => {
 	return (
 		<fieldset className="flex gap-1 lg:justify-normal items-center justify-between whitespace-nowrap relative">
-			<span className="font-semibold  text-black">Plataforma :</span>
+			<span className="font-medium text-black">Plataforma :</span>
 			<div className="flex items-center gap-[0.3rem]">
 				<button
 					type="button"

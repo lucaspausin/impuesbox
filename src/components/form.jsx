@@ -8,9 +8,9 @@ const SearchForm = ({ setSearch }) => {
 	};
 
 	return (
-		<form className="relative flex w-full lg:max-w-3xl items-center justify-between shadow-lg self-center lg:mb-10 rounded-r-full">
+		<form className="relative flex w-full lg:max-w-3xl items-center justify-between shadow-lg self-center lg:mb-10  rounded-full">
 			<svg
-				className="absolute left-3 block h-5 w-5  text-[#4f4f4f]"
+				className="absolute left-4 block h-5 w-5  text-[#4f4f4f]"
 				xmlns="http://www.w3.org/2000/svg"
 				width="24"
 				height="24"
@@ -27,7 +27,7 @@ const SearchForm = ({ setSearch }) => {
 			<input
 				name="search"
 				id="searchInput"
-				className="h-14 w-full py-8 text-[0.95rem] pl-12 bg-gray-50 border border-gray-200 placeholder:text-[#6d6d6d] text-gray-700 outline-none rounded-r-full"
+				className="h-14 w-full py-8 text-[0.95rem] pl-12 bg-gray-50 border border-gray-200 placeholder:text-[#6d6d6d] text-gray-700 outline-none rounded-full"
 				placeholder="Busca tu juego favorito aquí…"
 				onChange={(e) => setSearch(e.target.value)}
 				onKeyPress={handleKeyPress}
