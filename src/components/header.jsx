@@ -15,7 +15,7 @@ function Header() {
 					/>
 				</a>
 			</div>
-			<div className="flex flex-col gap-4 items-center justify-center w-full pt-12 text-center">
+			<div className="flex flex-col gap-3 items-center justify-center w-full pt-12 text-center">
 				<h1 className="text-4xl md:text-5xl lg:text-6xl">
 					Impuesbox,
 					<br />
