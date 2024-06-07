@@ -8,7 +8,7 @@ const SearchForm = ({ setSearch }) => {
 	};
 
 	return (
-		<form className="relative flex w-full lg:max-w-3xl items-center justify-between shadow-lg self-center lg:mb-10  rounded-full">
+		<form className="relative flex w-full lg:max-w-3xl items-center justify-between shadow-xl self-center lg:mb-10 rounded-full">
 			<svg
 				className="absolute left-4 block h-5 w-5  text-[#4f4f4f]"
 				xmlns="http://www.w3.org/2000/svg"

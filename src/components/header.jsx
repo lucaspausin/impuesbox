@@ -5,10 +5,14 @@ function Header() {
 		<header className="pt-6 md:pt-8 px-8 md:px-10 lg:px-12 pb-0 flex justify-between relative flex-col">
 			<div className="flex flex-shrink-0 items-center justify-end gap-4 w-full">
 				<a href="https://github.com/lucaspausin/impuesbox" target="_blank">
-					<img src="/images/github.svg" alt="" className="w-6 h-6" />
+					<img src="/images/github.svg" alt="my-github" className="w-6 h-6" />
 				</a>
 				<a href="https://www.linkedin.com/in/pausinlucas/" target="_blank">
-					<img src="/images/linkedin.svg" alt="" className="w-6 h-6" />
+					<img
+						src="/images/linkedin.svg"
+						alt="my-image-profile-linkedin"
+						className="w-6 h-6"
+					/>
 				</a>
 			</div>
 			<div className="flex flex-col gap-4 items-center justify-center w-full pt-12 text-center">
