@@ -54,7 +54,7 @@ const GameDisplay = ({ datos, search, platform }) => {
 
 	return (
 		<main>
-			<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 flex-1 px-8 md:px-10 lg:px-12 md:pb-8 gap-8 justify-between relative">
+			<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 flex-1 px-8 md:px-10 lg:px-12 md:pb-8 gap-4 justify-between relative">
 				{filteredGames.length === 0 ? (
 					<p className="col-span-full text-base font-Oswald text-black py-3">
 						¡Hmm, parece que no tenemos este juego en la colección por el
