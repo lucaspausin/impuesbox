@@ -8,7 +8,7 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 					loading="eager"
 					src={imgsrc || "/images/xbox-game-default.avif"}
 					alt="imagen-de-juego-de-xbox"
-					className="h-24 w-24 rounded-full contrast-150 drop-shadow-2xl"
+					className="h-24 w-24 rounded-full contrast-150"
 				/>
 				<div className="flex flex-col items-start justify-center gap-2 w-full pt-3">
 					{discount && (
@@ -29,11 +29,11 @@ function Card({ title, price, imgsrc, originalprice, discount, href }) {
 						loading="eager"
 						src={imgsrc || "/images/xbox-game-default.avif"}
 						alt="imagen-de-juego-de-xbox"
-						className="absolute top-5 left-0 rounded-full contrast-150 z-10 blur-2xl opacity-20 h-36 w-36"
+						className="absolute top-5 left-0 rounded-full contrast-150 z-10 blur-2xl opacity-10 h-36 w-36"
 					/>
 					<div className="flex flex-col gap-1 w-full">
 						{parseFloat(price) === 0 ? (
-							<p className="text-lg md:text-xl text-[#126215]  truncate">
+							<p className="text-lg md:text-xl text-[#126215] truncate">
 								GRATIS
 							</p>
 						) : (
