@@ -2,7 +2,7 @@ import React from "react";
 
 function Card({ title, price, imgsrc, originalprice, discount, href }) {
 	return (
-		<article className="flex flex-col justify-between items-start gap-2 bg-gray-50 shadow-xl h-[25rem] relative p-6 border border-gray-200">
+		<article className="flex flex-col justify-between items-start gap-2 bg-gray-50 shadow-lg h-[25rem] relative p-6 border border-gray-200">
 			<div className="flex flex-col w-full gap-2 ">
 				<img
 					loading="eager"
