@@ -92,7 +92,8 @@ function App() {
 					game.title.toLowerCase().includes(search.toLowerCase())) &&
 				((filter === "free" && game.gameType === "Free") ||
 					(filter === "deals" && game.gameType === "Offer") ||
-					(filter === "all" && game.gameType === "All"))
+					(filter === "all" &&
+						(game.gameType === "All" || game.gameType === "Offer")))
 			) {
 				if (filter === "all" && game.gameType === "free") {
 					return false;
